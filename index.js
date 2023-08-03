@@ -102,21 +102,19 @@ var ucetambolunenler,
   tekraredensayilar;
 
 //3a çözümü
-// en büyük
-enbuyuk = 0;
+enbuyuk = sayilar[0];
+enkucuk = sayilar[0];
 for (let i = 0; i < sayilar.length; i++) {
+  // en büyük
   if (sayilar[i] > enbuyuk) {
     enbuyuk = sayilar[i];
   }
-}
-console.log(enbuyuk);
-// en küçük
-enkucuk = enbuyuk;
-for (let i = 0; i < sayilar.length; i++) {
+  // en küçük
   if (sayilar[i] < enkucuk) {
     enkucuk = sayilar[i];
   }
 }
+console.log(enbuyuk);
 console.log(enkucuk);
 
 // 3b çözümü:
